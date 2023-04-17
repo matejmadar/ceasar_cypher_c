@@ -8,11 +8,12 @@ int main() {
     for (int i = 0; arr[i] != '\0'; i++) {
         char c = arr[i];
         if (isalpha(c)) {
-            char d = (c - 'a' - 7 + 26) % 26 + 'a';
-            putchar(d);
+            int d = ((int)c - 'A' + 7 + 26) % 26 + 'A';
+            arr[i] = (char)d;
         } else {
-            putchar(c);
+            arr[i] = c;
         }
     }
+    printf("%s", arr);
     return 0;
 }
