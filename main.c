@@ -14,6 +14,7 @@ int main() {
             arr[i] = c;
         }
     }
+    //uwu
     printf("%s", arr);
     return 0;
 }
